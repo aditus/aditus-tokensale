@@ -1,0 +1,92 @@
+.sectionHome
+  margin-top 20px
+
+  a
+    text-decoration none
+
+  .sectionHomeEntry
+    position relative
+    float left
+    width calc(25% - 4px)
+    height 365px
+    border 1px solid #111
+    background-color #292929
+    padding 10px 20px
+    margin 0px 2px
+    font-size 12px
+    cursor pointer
+    opacity 0.9
+    //background-image url("http://www.aditus.net/dist/images/banner.jpg")
+    background-size 120%
+    background-repeat no-repeat
+
+    &:hover
+      background-color darken(#292929, 10%)
+      opacity 1
+
+    .sectionHomeEntryPermission
+      position absolute
+      background-color rgba(0,0,0,0.9)
+      width 100%
+      height 100%
+      top 0px
+      left 0px
+      text-align center
+      padding-top 150px
+      font-size 14px
+
+    .sectionHomeEntryIcon
+      height 190px
+      margin-top 10px
+
+      img
+        width 16px
+        height 16px
+
+    .sectionHomeEntryStep
+      margin-bottom 5px
+      font-size 12px
+      color #c69c2b
+
+    .sectionHomeEntryTitle
+      font-size 18px
+      margin-bottom 15px
+      height 40px
+
+    .sectionHomeEntryDescription
+      line-height 16px
+      color #999
+
+.faqLink
+  text-align center
+  font-size 12px
+  color #BBB
+  margin auto
+  margin-top 25px
+
+  a
+    text-decoration underline
+
+
+@media screen and (max-width: 720px)
+  .sectionHomeEntry
+    float none !important
+    width calc(100%) !important
+    height 165px !important
+    background-image none !important
+    margin 5px 0px !important
+
+    .sectionHomeEntryPermission
+      padding-top 70px !important
+
+    .sectionHomeEntryIcon
+      height 30px !important
+
+    .sectionHomeEntryTitle
+      margin-bottom 10px !important
+      height 30px !important
+
+  .faqLink
+    width: 300px;
+
+@media screen and (min-width: 721px){}

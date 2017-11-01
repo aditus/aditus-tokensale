@@ -1,0 +1,59 @@
+.sectionSummary
+  margin-top 20px
+
+  .sectionSummaryFigure
+    padding 20px
+    background-color #111
+    border-radius 2px
+    margin 25px 0px
+
+    .sectionSummaryFigureEntry
+      float left
+      padding 15px 10px
+      margin 10px
+      text-align center
+      width calc(50% - 20px)
+
+      &:first-child
+        border-right 1px dashed #BBB
+
+      .sectionSummaryFigureEntryTitle
+        font-size 12px
+        text-transform uppercase
+        color #c69c2b
+
+      .sectionSummaryFigureEntryNum
+        font-size 42px
+        letter-spacing -0.4px
+
+  .sectionSummaryStats
+    text-align center
+
+    .sectionSummaryStatsEquivalent
+      font-size 18px
+      margin-bottom 5px
+      color #c69c2b
+
+    .sectionSummaryStatsHistory
+      font-size 11px
+      color #666
+
+    .sectionSummaryStatsButton
+      margin auto
+      text-align center
+      margin-top 15px
+
+
+@media screen and (max-width: 720px)
+  .sectionSummaryFigureEntry
+    float none !important
+    width calc(100% - 20px) !important
+
+    &:first-child
+      border-bottom 1px dashed #BBB !important
+      border-right none !important
+
+    .sectionSummaryFigureEntryNum
+      font-size 34px !important
+
+@media screen and (min-width: 721px){}

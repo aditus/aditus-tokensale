@@ -1,2 +1,1 @@
-# aditus-tokensale
-Website for the Token Sale
+Token Sale site for Aditus

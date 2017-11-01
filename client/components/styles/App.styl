@@ -1,0 +1,153 @@
+@require '../../lib/vars.styl'
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@require 'Login.styl'
+@require 'Contribution.styl'
+@require 'Faq.styl'
+@require 'Home.styl'
+@require 'Registration.styl'
+@require 'Summary.styl'
+@require 'Sale.styl'
+
+
+*
+  box-sizing border-box
+
+a
+  color: inherit
+
+.clear
+  clear: both
+
+input
+  padding 10px 15px
+  font-size 14px
+  width 100%
+
+button
+  padding 8px 25px
+  background-color #c69c2b
+  font-size 14px
+  border none
+  outline none
+  text-transform capitalize
+  //font-family: 'Merriweather', serif
+  cursor pointer
+  margin 0px 2px
+
+  &:hover
+    background-color darken(#c69c2b, 20%)
+
+button.cancel
+  background-color grey
+
+  &:hover
+    background-color darken(grey, 20%)
+
+.danger
+  background-color darken(red, 30%)
+  border-radius 2px
+  padding 10px 15px
+  margin 10px 0px
+  text-align center
+  text-transform uppercase
+  font-size 12px
+  font-weight bold
+
+body
+  background #222
+  font-family helvetica
+  color #DDD
+  font-size 14px
+
+.serif
+  font-family: 'Merriweather', serif
+
+.textIcon
+  float left
+  margin-right 5px
+
+  img
+    width 18px
+    height 18px
+
+.textIconLabel
+  float left
+
+.footer
+  position fixed
+  bottom 0px
+  width 100%
+  background-color #363636
+  font-size 11px
+  padding 7px 15px
+  color #BBB
+  text-align center
+
+.nav
+  background #000
+  padding 15px 20px
+  margin-bottom 20px
+
+  a
+    text-decoration none
+
+  .tabLogin
+    float right
+    color white
+    margin-top 10px
+
+    .tabLoginEmail
+      float left
+      color #BBB
+      padding-top 5px
+
+    .tabLoginLogout
+      float right
+      margin-left 15px
+
+  .logo
+    width 120px
+    margin-top 5px
+
+.page
+  padding 15px 20px
+  max-width 900px
+  margin auto
+
+  .pageContent
+    float left
+    width calc(100% - 0px)
+    margin-bottom 40px
+
+    .pageContentHeader
+
+      .pageContentHeaderText
+        float left
+        width calc(100% - 70px)
+
+      .pageContentHeaderButton
+        float right
+        width 70px
+        text-align right
+        text-transform uppercase
+
+.siteTitle
+  font-family: 'Merriweather', serif;
+  font-size 22px
+  color #FEFEFE
+  margin-bottom 5px
+
+
+@media screen and (max-width: 720px)
+  .pageContent
+    //text-align center
+
+    .pageContentHeaderText
+      float left !important
+      width calc(100% - 70px) !important
+
+    .pageContentHeaderButton
+      //float none !important
+
+@media screen and (min-width: 721px){}
